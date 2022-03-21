@@ -5,8 +5,8 @@
         elevation="0"
         color="transparent"
     >
-      <h2>Who we are?</h2>
-      <p>Just two friends with an ideia!</p>
+      <h2>Quem nós somos?</h2>
+      <p>Apenas dois amigos com uma ideia!</p>
     </v-card>
 
     <v-row justify="center" class="my-1">
@@ -25,11 +25,11 @@
           </v-img>
 
           <v-card-subtitle class="pb-0 text-left">
-            Backend Developer
+            Desenvolvedor Backend
           </v-card-subtitle>
 
           <v-card-text class="text--primary text-left">
-            <div>Some text</div>
+            <div>Texto qualquer, frase de efeito, sei lá...</div>
           </v-card-text>
 
           <v-card-actions>
@@ -80,11 +80,11 @@
           </v-img>
 
           <v-card-subtitle class="pb-0 text-left">
-            Frontend Developer
+            Desenvolvedora Frontend
           </v-card-subtitle>
 
           <v-card-text class="text--primary text-left">
-            <div>Some text</div>
+            <div>Texto qualquer, frase de efeito, sei lá...</div>
           </v-card-text>
 
           <v-card-actions>
@@ -158,10 +158,12 @@ export default {
       {src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',},
       {src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',},
       {src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',},
-      {src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',},
-      {src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',},
-      {src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',},
-      {src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',},
+      {src: 'https://picsum.photos/500/300?image=15',},
+      {src: 'https://picsum.photos/500/300?image=20',},
+      {src: 'https://picsum.photos/500/300?image=25',},
+      {src: 'https://picsum.photos/500/300?image=30',},
+      {src: 'https://picsum.photos/500/300?image=35',},
+      {src: 'https://picsum.photos/500/300?image=40',},
     ]
   }),
 }

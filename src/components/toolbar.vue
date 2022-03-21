@@ -61,7 +61,7 @@
       </v-toolbar>
     </v-card>
 
-    <!-- DIALOG -->
+    <!-- DIALOG HOW TO PLAY -->
     <v-dialog
         v-model="dialog"
         width="650"
@@ -71,15 +71,22 @@
         <v-card dark color="primary">
           <v-card-title>
             <v-spacer/>
-            How to play Minesweeper
+            Como jogar campo minado?
             <v-spacer/>
           </v-card-title>
         </v-card>
 
         <!-- Dialog Rules -->
         <v-card class="rounded-t-0">
-          <v-card-text>
-            Rules here
+          <v-card-text class="text-left">
+            As regras do Campo Minado são simples: <br>
+            <strong>1.</strong> Clique com o botão esquerdo do mouse para abrir um quadrado. <br>
+            <strong>2.</strong> Clique com o botão direito do mouse para colocar ou retirar uma bandeira que sinaliza a bomba. <br>
+            <strong>3.</strong> Se você descobrir uma mina, o jogo acaba. <br>
+            <strong>4.</strong> Se descobrir um quadrado vazio, o jogo continua. <br>
+            <strong>5.</strong> Se aparecer um número, ele informará quantas minas estão escondidas nos oito quadrados que o cercam.
+              Você usa essa informação para deduzir em que quadrados próximos é seguro clicar. <br>
+            <strong>6.</strong> Caso você perca, o jogo mostrará quais bombas você errou, quais bombas acertou e onde estavam as bombas restantes. <br>
           </v-card-text>
 
           <v-divider></v-divider>
@@ -92,7 +99,7 @@
                 text rounded
                 @click="dialog = false"
             >
-              Let's play!
+              Vamos jogar!
             </v-btn>
           </v-card-actions>
         </v-card>
