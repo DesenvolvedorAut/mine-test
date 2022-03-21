@@ -5,15 +5,15 @@
         <!-- LOGO -->
         <router-link to="/">
           <v-toolbar-title>
-            <v-img
-                width="150px"
-                src="https://www.logo.wine/a/logo/Instagram/Instagram-Wordmark-Logo.wine.svg"
-            ></v-img>
+            <img width="145"
+                src="../../public/logo-minado.png"
+            >
           </v-toolbar-title>
         </router-link>
+
         <v-spacer/>
 
-        <!-- HOME PAGE
+        <!-- HOME PAGE -->
         <router-link to="/">
           <v-btn
               v-if="this.$route.path === '/information'"
@@ -22,7 +22,6 @@
             <v-icon>mdi-home</v-icon>
           </v-btn>
         </router-link>
-        -->
 
         <!-- INFO PAGE -->
         <router-link to="/information">
@@ -68,7 +67,7 @@
     >
       <v-card class="rounded-lg">
         <!-- Dialog Title -->
-        <v-card dark color="primary">
+        <v-card dark color="primary" class="rounded-b-0">
           <v-card-title>
             <v-spacer/>
             Como jogar campo minado?
