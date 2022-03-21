@@ -1,20 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="app">
+    <!-- TOOLBAR -->
+    <toolbar></toolbar>
+
+    <v-main>
+      <!-- VIEW -->
+      <router-view/>
+    </v-main>
+
+    <!-- FOOTER -->
+    <rodape></rodape>
+  </v-app>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Toolbar from "@/components/toolbar";
+import Rodape from "@/components/rodape";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+    Rodape,
+    Toolbar
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
+
 
 <style>
 #app {
@@ -23,6 +40,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
