@@ -42,8 +42,8 @@
             :color="colorThema"
             icon
         >
-          <v-icon v-if="$vuetify.theme.dark">mdi-moon-waxing-crescent</v-icon>
-          <v-icon v-if="$vuetify.theme.dark === false">mdi-weather-sunny</v-icon>
+          <v-icon v-if="$vuetify.theme.dark">mdi-brightness-3</v-icon>
+          <v-icon v-if="$vuetify.theme.dark === false">mdi-brightness-7</v-icon>
         </v-btn>
 
         <!-- GITHUB REPOSITORY -->
@@ -179,7 +179,15 @@ export default {
         {title: 'Sobre nós', icon: 'mdi-account-group', url: '/information'},
       ],
       jogos: [
-        {title: 'Campo Minado', icon: 'mdi-flag-variant', url: '/'},
+        {title: 'Campo Minado', icon: 'mdi-flag-variant', url: '/campo-minado'},
+        {title: 'Damas', icon: 'mdi-chess-pawn', url: '/damas'},
+        {title: 'Jogo da Memória', icon: 'mdi-brain', url: '/jogo-da-memoria'},
+        {title: 'Jogo da Velha', icon: 'mdi-pound', url: '/jogo-da-velha'},
+        {title: 'Jogo do Dino', icon: 'mdi-google-downasaur', url: '/jogo-do-dino'},
+        {title: 'Jogo dos 7 erros', icon: 'mdi-close', url: '/jogo-dos-sete-erros'},
+        {title: 'Paciência', icon: 'mdi-cards-playing-outline', url: '/paciencia'},
+        {title: 'Paint', icon: 'mdi-draw', url: '/paint'},
+        {title: 'Xadrez', icon: 'mdi-chess-queen', url: '/xadrez'},
       ],
 
       thema: false,

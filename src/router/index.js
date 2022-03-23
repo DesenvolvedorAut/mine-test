@@ -8,10 +8,10 @@ Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
-        name: '',
+        path: '/campo-minado',
+        name: 'Campo Minado',
         component: minesweeper,
-        meta: {title: 'Minesweeper'}
+        meta: {title: 'Campo Minado'}
     },
     {
         path: '/information',
