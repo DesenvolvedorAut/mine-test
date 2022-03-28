@@ -131,7 +131,7 @@
           <v-slide-item v-for="(image, i) in images" :key="i">
             <v-card class="ma-2">
               <v-img
-                  v-bind:src="require('@/assets/'+ image.src)"
+                  v-bind:src="require('@/static/'+ image.src)"
                   height="200"
                   width="200"></v-img>
             </v-card>
