@@ -7,6 +7,7 @@
       <!-- VIEW -->
       <router-view/>
 
+
       <!-- IMAGE TEST -->
       <template v-if="this.$route.path === '/'">
         <div class="container">
@@ -29,6 +30,7 @@
         </div>
       </template>
     </v-main>
+
 
     <!-- FOOTER -->
     <rodape></rodape>
