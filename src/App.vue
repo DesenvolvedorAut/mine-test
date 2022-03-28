@@ -10,6 +10,7 @@
 
     <!-- FOOTER -->
     <rodape></rodape>
+
   </v-app>
 </template>
 
@@ -21,14 +22,22 @@ import Rodape from "@/components/rodape";
 export default {
   name: 'App',
 
+  // NOME DA GUIA DO NAVEGADOR
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to,) {
+        document.title = to.meta.title || 'Arcade Brasil';
+      }
+    },
+  },
+
   components: {
     Rodape,
     Toolbar
   },
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
 

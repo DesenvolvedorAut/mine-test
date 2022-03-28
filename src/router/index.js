@@ -17,7 +17,7 @@ const routes = [
         path: '/information',
         name: 'Information - Minesweeper',
         component: info,
-        meta: {title: 'Information - Minesweeper'}
+        meta: {title: 'Information'}
     },
 ]
 

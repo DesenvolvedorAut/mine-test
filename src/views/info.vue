@@ -1,6 +1,6 @@
 <template>
   <v-container id="center">
-    <!-- TITLE -->
+    <!-- TITLE
     <v-card
         elevation="0"
         color="transparent"
@@ -8,9 +8,10 @@
       <h2>Quem nós somos?</h2>
       <p>Apenas dois amigos com uma ideia!</p>
     </v-card>
+    -->
 
     <v-row justify="center" class="my-1">
-      <!-- GUSTAVO YOSHIMI YAMASHITA -->
+      <!-- GUSTAVO YOSHIMI YAMASHITA
       <v-col cols="auto">
         <v-card
             class="mx-auto"
@@ -64,8 +65,9 @@
           </v-card-actions>
         </v-card>
       </v-col>
+      -->
 
-      <!-- LAURA FERNANDES SORATO -->
+      <!-- LAURA FERNANDES SORATO
       <v-col cols="auto">
         <v-card
             class="mx-auto"
@@ -119,6 +121,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
+      -->
     </v-row>
 
     <!-- FRIENDS -->
@@ -128,13 +131,8 @@
             class="pa-4"
             show-arrows
         >
-          <v-slide-item
-              v-for="(image, i) in images"
-              :key="i"
-          >
-            <v-card
-                class="ma-2"
-            >
+          <v-slide-item v-for="(image, i) in images" :key="i">
+            <v-card class="ma-2">
               <v-img
                   :src="image"
                   height="200"
@@ -143,6 +141,20 @@
           </v-slide-item>
         </v-slide-group>
       </v-card>
+    </v-row>
+
+    <v-row justify="center">
+      <v-img class="mr-2" height="150" width="150"
+             src="../static/hawk.jpg"></v-img>
+
+      <v-img class="mr-2" height="150" width="150"
+             src="../assets/lion.jpg"></v-img>
+
+      <v-img class="mr-2" height="150" width="150"
+             src="../../public/panter.jpg"></v-img>
+
+      <v-img class="mr-2" height="150" width="150"
+             src="../../static/tiger.jpg"></v-img>
     </v-row>
   </v-container>
 </template>
@@ -154,7 +166,7 @@ export default {
 
   data: () => ({
     images: [
-      {src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',},
+      {src: '../../static/tiger.jpg',},
       {src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',},
       {src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',},
       {src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',},
